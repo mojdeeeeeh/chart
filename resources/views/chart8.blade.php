@@ -8,8 +8,14 @@ assets: orgChart/all -->
     <title>Orgchart, Tree Layout and Interaction</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('orgChart/build/rappid.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('orgChart/css/orgchart.css') }}">
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
   </head>
   <body>
+    @include('layouts.menu')
+
     <p class="center">Drag nodes to move branches, add new nodes with '+', remove old nodes with '-'.</p>
     <div id="paper-container"></div>
     <p>Show the ORG Chart in  <span id="orgchart-direction"></span> direction.</p>

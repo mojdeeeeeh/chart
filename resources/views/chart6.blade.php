@@ -12,6 +12,10 @@ assets: codebase1 common1 -->
 
 	<link rel="stylesheet" href="{{ asset('common1/dhx_samples.css') }}">
 	<script type="text/javascript" src="{{ asset('common1/data.js') }}"></script>
+
+	<script src="{{ asset('js/app.js') }}" defer></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
 </head>
 <style>
 	body {
@@ -19,6 +23,7 @@ assets: codebase1 common1 -->
 	}
 </style>
 <body>
+	 @include('layouts.menu')
 	<script>
 		var diagram = new dhx.Diagram(document.body, { 
 			type: "org",

@@ -10,6 +10,8 @@
     <script src="{{ asset('chart/js/getorgchart.js') }}"></script>
     <link href="{{ asset('chart/css/getorgchart.css') }}" rel="stylesheet" />
 
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style type="text/css">
         html, body {
             margin: 0px;
@@ -27,6 +29,7 @@
     </style>
 </head>
 <body>
+     @include('layouts.menu')
     <div id="people"></div>
 
 
@@ -46,7 +49,6 @@
                 { id: 8, parentId: 6, name: "Max Ford", title: "Budget manager", phone: "989-474-8325", mail: "hunter@teleworm.us", image: "images/f-6.jpg" },
                 { id: 9, parentId: 7, name: "Riley Bray", title: "Structural metal fabricator", phone: "479-359-2159", image: "images/f-3.jpg" },
                 { id: 10, parentId: 7, name: "Callum Whitehouse", title: "Radar controller", phone: "847-474-8775", image: "images/f-2.jpg" }
-                { id: 11, parentId: 8, name: "Callum Whitehouse", title: "Radar controller", phone: "847-474-8775", image: "images/f-2.jpg" }
             ]
         });
     </script>

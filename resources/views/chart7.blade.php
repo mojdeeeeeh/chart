@@ -12,6 +12,10 @@ assets: codebase2 common2 -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 
 	<script type="text/javascript" src="{{ asset('common2/data.js') }}"></script>
+
+	<script src="{{ asset('js/app.js') }}" defer></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 	<style>
 		html,
 		body {
@@ -22,6 +26,7 @@ assets: codebase2 common2 -->
 </head>
 
 <body>
+	@include('layouts.menu')
 	<script>
 		var editor = new dhx.DiagramEditor(document.body, {
 			type: "org",

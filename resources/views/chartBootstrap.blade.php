@@ -19,6 +19,9 @@
 
 </head>
 <body>
+
+    @include('layouts.menu')
+    
     <div id="app">
 
         <div class="tree">

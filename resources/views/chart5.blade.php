@@ -21,7 +21,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    
+     @include('layouts.menu')
 
 <div id="app">
 <div>
